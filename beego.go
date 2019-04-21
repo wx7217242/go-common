@@ -1,4 +1,4 @@
-package util
+package common
 
 import (
 	"encoding/json"
@@ -22,7 +22,7 @@ func convertLogLevel(level string) int {
 	return logs.LevelDebug
 }
 
-func InitLogger(path, level string) (err error) {
+func InitBeegoLogger(path, level string) (err error) {
 	config := make(map[string]interface{})
 	config["filename"] = path
 	config["level"] = convertLogLevel(level)

@@ -1,4 +1,4 @@
-package util
+package common
 
 import (
 	etcd_client "go.etcd.io/etcd/clientv3"

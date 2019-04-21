@@ -1,4 +1,4 @@
-package util
+package common
 
 import (
 	"log"
@@ -6,7 +6,7 @@ import (
 )
 
 // 初始化go默认的日志
-func InitLog(path string) (err error) {
+func InitGoLog(path string) (err error) {
 	f, err := os.OpenFile(path, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0666)
 	if err != nil {
 		return
